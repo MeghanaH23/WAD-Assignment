@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Loan Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vehicle Loan Calculator</h1>
+        <form id="vehicleLoanForm">
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="principal">Principal Amount</label>
+                <input type="number" id="principal" placeholder="Enter Principal Amount" required>
+            </div>
+            <div class="form-group">
+                <label for="years">Time in Years</label>
+                <input type="number" id="years" placeholder="Enter Time in Years" required>
+            </div>
+            <div class="form-group">
+                <label for="rate">Interest Rate (%)</label>
+                <input type="text" id="rate" value="7.5" readonly>
+            </div>
+            <div class="form-group">
+                <label for="monthly-payment">Monthly Payment</label>
+                <input type="text" id="monthly-payment" readonly>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
